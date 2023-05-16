@@ -26,13 +26,13 @@
 ### A set of well-defined instructions to solve a particular problem
 
 #### Recipe Analogy
+  
+    - Algorithm to cook some tasty noodles
 <img width="790" alt="Screenshot 2023-05-17 at 2 27 02 AM" src="https://github.com/jaggehns/DSA/assets/72048640/c7ae2fab-c3de-4843-a4b5-2e89f0289149">
-
-
 
 #### Programming Analogy
   
-##### Algorithm to add two numbers
+    - Algorithm to add two numbers
 <img width="841" alt="Screenshot 2023-05-17 at 2 02 06 AM" src="https://github.com/jaggehns/DSA/assets/72048640/071e64f2-19a3-40ba-9971-00a75967bd24">
   
 #### Characteristics
