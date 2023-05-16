@@ -26,7 +26,9 @@
 ### A set of well-defined instructions to solve a particular problem
 
 #### Recipe Analogy
-<img width="879" alt="Screenshot 2023-05-17 at 1 57 05 AM" src="https://github.com/jaggehns/DSA/assets/72048640/37ec0638-dceb-4fd6-b6ae-108af7d66529">
+<img width="790" alt="Screenshot 2023-05-17 at 2 27 02 AM" src="https://github.com/jaggehns/DSA/assets/72048640/c7ae2fab-c3de-4843-a4b5-2e89f0289149">
+
+
 
 #### Programming Analogy
   
