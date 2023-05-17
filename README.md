@@ -27,61 +27,44 @@
     - [Fibonacci Sequence](#fibonacci-sequence)
     - [Factorial of a Number](#factorial-of-a-number)
 
+---
+
 ## Algorithms
 
 ### What is an Algorithm?
 
-<details>
-  <summary>
-    A set of well-defined instructions to solve a particular problem. <i>(Click to expand)</i>
-  </summary>
-
-### A set of well-defined instructions to solve a particular problem
+ - A set of well-defined instructions to solve a particular problem
 
 #### Recipe Analogy
   
     - Algorithm to cook some tasty noodles
-<img width="841" alt="Screenshot 2023-05-17 at 2 27 02 AM" src="https://github.com/jaggehns/DSA/assets/72048640/c7ae2fab-c3de-4843-a4b5-2e89f0289149">
+<img width="624" alt="Screenshot 2023-05-17 at 2 27 02 AM" src="https://github.com/jaggehns/DSA/assets/72048640/c7ae2fab-c3de-4843-a4b5-2e89f0289149">
 
 #### Programming Analogy
   
     - Algorithm to add two numbers
-<img width="841" alt="Screenshot 2023-05-17 at 2 02 06 AM" src="https://github.com/jaggehns/DSA/assets/72048640/071e64f2-19a3-40ba-9971-00a75967bd24">
+<img width="624" alt="Screenshot 2023-05-17 at 2 02 06 AM" src="https://github.com/jaggehns/DSA/assets/72048640/071e64f2-19a3-40ba-9971-00a75967bd24">
   
 #### Characteristics
 - Well defined inputs & outputs
 - Each step should be clear and unambiguous
 - Language independent
 
-</details>
-
 ---
 
 ### Why Algorithms?
 
-<details>
-  <summary>
-    Efficient problem solving. <i>(Click to expand)</i>
-  </summary>
-
-### Efficient problem solving
+#### Efficient problem solving
 
 - Learning algorithms translates to learning different techniques to efficiently solve problems 
 - One problem can be solved in many ways using different algorithms
 - Every algorithm comes with its own trade-offs when it comes to performance
-  
-</details>
 
 ---
 
  ### Algorithm Analysis
 
-<details>
-  <summary>
-   We evaluate the performance of an algorithm in terms of its input size. <i>(Click to expand)</i>
-  </summary>
-
-### We evaluate the performance of an algorithm in terms of its input size
+  - We evaluate the performance of an algorithm in terms of its input size
   
 #### Time Complexity
       - Amount of time taken for an algorithm to run, as a function of input size
@@ -98,19 +81,12 @@
   - If your app needs to be very quick and has plenty of memory to work with, you don't have to worry about space complexity
   
   - If you have very little memory to work with, you should picl a solution that is relatively slower but needs less space
-
-  </details>
   
 ---
 
  ### Big-O Notation
 
-<details>
-  <summary>
-    The worse case complexity of an algorithm. <i>(Click to expand)</i>
-  </summary>
-
-###  The worse case complexity of an algorithm
+####  The worse case complexity of an algorithm
 
 - Big-O notation describes the complexity of an algorithm using algebraic terms
   
@@ -168,16 +144,9 @@
   
   <img width="624" alt="Screenshot 2023-05-17 at 4 09 37 PM" src="https://github.com/jaggehns/DSA/assets/72048640/df5a8415-c0da-4147-90f0-86ad1e002a13">
 
-</details>
-
 ---
 
 ### Objects and Arrays Big-O
-
-<details>
-  <summary>
-    Objects & Arrays Big-O. <i>(Click to expand)</i>
-  </summary>
 
  #### Objects Big-O
   
@@ -231,24 +200,15 @@
   
     forEach / map / filter / reduce - O(n)
 
-  
-  
-</details>
-
 ---
 
 ### Math Algorithms
 
-<details>
-  <summary>
-    Math Algorithms <i>(Click to expand)</i>
-  </summary>
-
- #### Fibonacci Sequence
+ #### [Fibonacci Sequence](algorithms/math-algorithms/fibonacci-sequence/fibonacci-sequence.js)
   
   **Problem** - Given a number 'n', find the first 'n' elements of the Fibonacci Sequence
   
-     In mathematics, the Fibonacci sequence is a sequence in which each number is the sum of the two preceeding ones
+   In mathematics, the Fibonacci sequence is a sequence in which each number is the sum      of the two preceeding ones
   
      The first two numbers in the sequence are 0 and 1
   
@@ -256,10 +216,47 @@
      fibonacci(3) = [0,1,1]
      fibonacci(7) = [0,1,1,2,3,5,8]
   
+  
+  ```js
+  const fibonacci = (n) => {
+     const fib = [0, 1];
+
+     for (let i = 2; i < n; i++) {
+       fib[i] = fib[i - 1] + fib[i - 2];
+     }
+
+     return fib;
+  };
+  ```
+   - Big O - O(n)                 
+                           
 ---
   
-  #### Factorial of a Number
+  #### [Factorial of a Number](algorithms/math-algorithms/fibonacci-sequence/factorial-of-a-number.js)
   
-</details>
+  **Problem** - Given an integer 'n', find the factorial of that integer
+  
+   In mathematics, the factorial of a non-negative integer 'n', denoted n!, is the          product of all positive integers less than or equal to 'n'
+   
+   The first two numbers in the sequence are 0 and 1
+  
+     Factorial of zero is 1
+     factorial(4) = 4*3*2*1 = 24
+     factorial(5) = 5*4*3*2*1 = 120
+  
+  
+```js
+const factorial = (n) => {
+   let result = 1;
+   
+   //i = 2 because multiplying by 1 has no effect
+   for (let i = 2; i <= n; i++) {
+     result *= i;
+   }
+   
+   return result;
+};
+```
+   - Big O - O(n)       
 
 ---
