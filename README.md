@@ -154,7 +154,12 @@
   
   <br />
   
-  <img width="624" alt="Screenshot 2023-05-17 at 4 22 35 PM" src="https://github.com/jaggehns/DSA/assets/72048640/addafc31-db62-44be-919f-758f6e998716">
+ ```js
+  const person = {
+    firstName: 'Bruce',
+    lastName: 'Wayne'
+  }
+  ```
   
   <br /><br />
   
@@ -180,10 +185,10 @@
   
   <br />
   
-  <img width="624" alt="Screenshot 2023-05-17 at 4 33 47 PM" src="https://github.com/jaggehns/DSA/assets/72048640/9f92b129-7759-4d40-b3c1-dab30c0ba9ea">
+ ```js
+  const odd = [1, 3, 5, 7, 9]
+  ```
 
- 
-  
   <br /><br />
   
     Insert / remove at end - O(1)
