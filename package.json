@@ -1,0 +1,19 @@
+{
+  "name": "dsa",
+  "version": "1.0.0",
+  "description": "DSA",
+  "type": "module",
+  "scripts": {
+    "test-fibonacci": "node ./algorithms/math-algorithms/fibonacci-sequence/fibonacci-sequence.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jaggehns/DSA.git"
+  },
+  "author": "Jaggehn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jaggehns/DSA/issues"
+  },
+  "homepage": "https://github.com/jaggehns/DSA#readme"
+}
