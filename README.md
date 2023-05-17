@@ -23,6 +23,9 @@
   - [Objects and Arrays Big-O](#objects-and-arrays-big-o)
     - [Objects Big-O](#objects-big-o)
     - [Arrays Big-0](#arrays-big-o)
+  - [Math Algorithms](#math-algorithms)
+    - [Fibonacci Sequence](#fibonacci-sequence)
+    - [Factorial of a Number](#factorial-of-a-number)
 
 ## Algorithms
 
@@ -229,6 +232,33 @@
     forEach / map / filter / reduce - O(n)
 
   
+  
+</details>
+
+---
+
+### Math Algorithms
+
+<details>
+  <summary>
+    Math Algorithms <i>(Click to expand)</i>
+  </summary>
+
+ #### Fibonacci Sequence
+  
+  **Problem** - Given a number 'n', find the first 'n' elements of the Fibonacci Sequence
+  
+     In mathematics, the Fibonacci sequence is a sequence in which each number is the sum of the two preceeding ones
+  
+     The first two numbers in the sequence are 0 and 1
+  
+     fibonacci(2) = [0,1]
+     fibonacci(3) = [0,1,1]
+     fibonacci(7) = [0,1,1,2,3,5,8]
+  
+---
+  
+  #### Factorial of a Number
   
 </details>
 
