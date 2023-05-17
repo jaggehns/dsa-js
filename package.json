@@ -4,7 +4,8 @@
   "description": "DSA",
   "type": "module",
   "scripts": {
-    "test-fibonacci": "node ./algorithms/math-algorithms/fibonacci-sequence/fibonacci-sequence.js"
+    "test-fibonacci": "node ./algorithms/math-algorithms/fibonacci-sequence/fibonacci-sequence.js",
+    "test-factorial": "node ./algorithms/math-algorithms/factorial-of-a-number/factorial-of-a-number.js"
   },
   "repository": {
     "type": "git",
