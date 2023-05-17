@@ -207,7 +207,8 @@
  #### [Fibonacci Sequence](algorithms/math-algorithms/fibonacci-sequence/fibonacci-sequence.js)
   
   **Problem** - Given a number 'n', find the first 'n' elements of the Fibonacci Sequence
-   In mathematics, the Fibonacci sequence is a sequence in which each number is the sum of the two preceeding ones
+  
+   In mathematics, the Fibonacci sequence is a sequence in which each number is the sum      of the two preceeding ones
   
      The first two numbers in the sequence are 0 and 1
   
@@ -217,7 +218,7 @@
   
   
   ```js
-  export const fibonacci = (n) => {
+  const fibonacci = (n) => {
      const fib = [0, 1];
 
      for (let i = 2; i < n; i++) {
@@ -231,6 +232,31 @@
                            
 ---
   
-  #### Factorial of a Number
+  #### [Factorial of a Number](algorithms/math-algorithms/fibonacci-sequence/factorial-of-a-number.js)
+  
+  **Problem** - Given an integer 'n', find the factorial of that integer
+  
+   In mathematics, the factorial of a non-negative integer 'n', denoted n!, is the          product of all positive integers less than or equal to 'n'
+   
+   The first two numbers in the sequence are 0 and 1
+  
+     Factorial of zero is 1
+     factorial(4) = 4*3*2*1 = 24
+     factorial(5) = 5*4*3*2*1 = 120
+  
+  
+```js
+const factorial = (n) => {
+   let result = 1;
+   
+   //i = 2 because multiplying by 1 has no effect
+   for (let i = 2; i <= n; i++) {
+     result *= i;
+   }
+   
+   return result;
+};
+```
+   - Big O - O(n)       
 
 ---
