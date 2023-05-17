@@ -232,7 +232,7 @@
                            
 ---
   
-  #### [Factorial of a Number](algorithms/math-algorithms/fibonacci-sequence/factorial-of-a-number.js)
+  #### [Factorial of a Number](algorithms/math-algorithms/factorial-of-a-number/factorial-of-a-number.js)
   
   **Problem** - Given an integer 'n', find the factorial of that integer
   
