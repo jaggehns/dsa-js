@@ -27,16 +27,13 @@
     - [Fibonacci Sequence](#fibonacci-sequence)
     - [Factorial of a Number](#factorial-of-a-number)
 
+---
+
 ## Algorithms
 
 ### What is an Algorithm?
 
-<details>
-  <summary>
-    A set of well-defined instructions to solve a particular problem. <i>(Click to expand)</i>
-  </summary>
-
-### A set of well-defined instructions to solve a particular problem
+ - A set of well-defined instructions to solve a particular problem
 
 #### Recipe Analogy
   
@@ -53,35 +50,21 @@
 - Each step should be clear and unambiguous
 - Language independent
 
-</details>
-
 ---
 
 ### Why Algorithms?
 
-<details>
-  <summary>
-    Efficient problem solving. <i>(Click to expand)</i>
-  </summary>
-
-### Efficient problem solving
+#### Efficient problem solving
 
 - Learning algorithms translates to learning different techniques to efficiently solve problems 
 - One problem can be solved in many ways using different algorithms
 - Every algorithm comes with its own trade-offs when it comes to performance
-  
-</details>
 
 ---
 
  ### Algorithm Analysis
 
-<details>
-  <summary>
-   We evaluate the performance of an algorithm in terms of its input size. <i>(Click to expand)</i>
-  </summary>
-
-### We evaluate the performance of an algorithm in terms of its input size
+  - We evaluate the performance of an algorithm in terms of its input size
   
 #### Time Complexity
       - Amount of time taken for an algorithm to run, as a function of input size
@@ -98,19 +81,12 @@
   - If your app needs to be very quick and has plenty of memory to work with, you don't have to worry about space complexity
   
   - If you have very little memory to work with, you should picl a solution that is relatively slower but needs less space
-
-  </details>
   
 ---
 
  ### Big-O Notation
 
-<details>
-  <summary>
-    The worse case complexity of an algorithm. <i>(Click to expand)</i>
-  </summary>
-
-###  The worse case complexity of an algorithm
+####  The worse case complexity of an algorithm
 
 - Big-O notation describes the complexity of an algorithm using algebraic terms
   
@@ -168,16 +144,9 @@
   
   <img width="624" alt="Screenshot 2023-05-17 at 4 09 37 PM" src="https://github.com/jaggehns/DSA/assets/72048640/df5a8415-c0da-4147-90f0-86ad1e002a13">
 
-</details>
-
 ---
 
 ### Objects and Arrays Big-O
-
-<details>
-  <summary>
-    Objects & Arrays Big-O. <i>(Click to expand)</i>
-  </summary>
 
  #### Objects Big-O
   
@@ -231,18 +200,9 @@
   
     forEach / map / filter / reduce - O(n)
 
-  
-  
-</details>
-
 ---
 
 ### Math Algorithms
-
-<details>
-  <summary>
-    Math Algorithms <i>(Click to expand)</i>
-  </summary>
 
  #### [Fibonacci Sequence](algorithms/math-algorithms/fibonacci-sequence/fibonacci-sequence.js)
   
@@ -272,7 +232,5 @@
 ---
   
   #### Factorial of a Number
-  
-</details>
 
 ---
