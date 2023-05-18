@@ -6,7 +6,9 @@
   "scripts": {
     "test-fibonacci": "node ./algorithms/math-algorithms/fibonacci-sequence/fibonacci-sequence.js",
     "test-factorial": "node ./algorithms/math-algorithms/factorial-of-a-number/factorial-of-a-number.js",
-    "test-prime": "node ./algorithms/math-algorithms/prime-number/prime-number.js"
+    "test-prime": "node ./algorithms/math-algorithms/prime-number/prime-number.js",
+    "test-power-of-two": "node ./algorithms/math-algorithms/power-of-two/power-of-two.js"
+
   },
   "repository": {
     "type": "git",
