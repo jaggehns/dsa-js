@@ -29,6 +29,10 @@
     - [Prime Number](#prime-number)
       - [First Solution](#first-solution)
       - [Optimized Primality Test](#optimized-primality-test)
+    - [Power of Two](#power-of-two)
+      - [Pseudocode](#pseudocode)
+      - [First Solution](#first-solution)
+      - [Bitwise Power of Two](#bitwise-power-of-two)
 
 ---
 
@@ -301,7 +305,7 @@ const isPrime = (n) => {
 
   #### Optimized Primality Test
 
-  Integers larger than the square root do not need to be checked because, whenever         'n=a*b', one of the two factors 'a' and 'b' is less than or equal to the square root of   'n'
+  Integers larger than the square root do not need to be checked because, whenever 'n=a*b', one of the two factors 'a' and 'b' is less than or equal to the square root of 'n'
   
      n=24, a=4 and b=6
      The square root of 24 is is 4.89
@@ -329,5 +333,76 @@ const isOptimizedPrime = (n) => {
 };
 ```
    - Big O - O(sqrt(n))       
+
+---
+
+  #### [Power of Two](algorithms/math-algorithms/power-of-two/power-of-two.js)
+  
+  **Problem** - Given a positive integer 'n', determine if the number is a power of 2 or not
+  
+   An integer is a power of two if there exists an integer 'x' such that 'n' === 2^x
+  
+     isPowerOfTwo(1) = true(2^0)
+     isPowerOfTwo(2) = true(2^1)
+     isPowerOfTwo(5) = false
+     
+  #### Pseudocode
+
+     n = 8
+     8/2 = 4 (remainder 0)
+     2/2 = 1 (remainder 0)
+     
+     If remainder is not 0 in any step, 'n' is not a power of two
+     If remainder is 0 and 'n' comes down to 1 eventually, n is a power of two
+  
+  #### First Solution
+
+```js
+const isPowerOfTwo = (n) => {
+  if (n < 1) {
+    return false;
+  }
+
+  while (n > 1) {
+    if (n % 2 !== 0) {
+      return false;
+    }
+
+    n = n / 2;
+  }
+
+  return true;
+};
+```
+   - Big O - O(logn)
+
+---
+
+  #### Bitwise Power of Two
+
+  In binary, a number that is a power of two except for one, ends in zero   
+
+     1 -> 0
+     2 -> 10
+     3 -> 100
+     4 -> 1000
+     
+     1 - 0001    2 - 0010   3 - 0100    4 - 1000  
+     0 - 0000    1 - 0001   2 - 0010    3 - 0100
+     --------    --------   --------    --------
+     0 - 0000    0 - 0000   0 - 0000    0 - 0000
+     
+     Bitwise & is 1 if both numbers are 1, else it is 0
+
+```js
+const isPowerOfTwoBitwise = (n) => {
+  if (n < 1) {
+    return false;
+  }
+
+  return (n & (n - 1)) === 0;
+};
+```
+   - Big O - O(1)
 
 ---
