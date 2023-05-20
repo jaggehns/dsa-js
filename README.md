@@ -33,7 +33,9 @@
       - [Pseudocode](#pseudocode)
       - [First Solution](#first-solution)
       - [Bitwise Power of Two](#bitwise-power-of-two)
-
+  - [Recursion](#recursion)
+    - [Recursive Fibonacci Sequence](#recursive-fibonacci-sequence)
+    
 ---
 
 ## Algorithms
@@ -220,7 +222,7 @@
   
   **Problem** - Given a number 'n', find the first 'n' elements of the Fibonacci Sequence
   
-   In mathematics, the Fibonacci sequence is a sequence in which each number is the sum      of the two preceeding ones
+   In mathematics, the Fibonacci sequence is a sequence in which each number is the sum of the two preceeding ones
   
      The first two numbers in the sequence are 0 and 1
   
@@ -240,7 +242,10 @@
      return fib;
   };
   ```
-   - Big O - O(n)                 
+  
+  #### Time Complexity
+  
+  Big O - O(n)                 
                            
 ---
   
@@ -248,7 +253,7 @@
   
   **Problem** - Given an integer 'n', find the factorial of that integer
   
-   In mathematics, the factorial of a non-negative integer 'n', denoted n!, is the          product of all positive integers less than or equal to 'n'
+   In mathematics, the factorial of a non-negative integer 'n', denoted n!, is the product of all positive integers less than or equal to 'n'
    
    The first two numbers in the sequence are 0 and 1
   
@@ -269,7 +274,10 @@ const factorial = (n) => {
    return result;
 };
 ```
-   - Big O - O(n)       
+
+#### Time Complexity
+
+Big O - O(n)       
 
 ---
 
@@ -277,7 +285,7 @@ const factorial = (n) => {
   
   **Problem** - Given a natural number 'n', determine if the number is prime or not
   
-   A prime number is a natural number greater than 1 that is not a product of two smaller    natural numbers
+   A prime number is a natural number greater than 1 that is not a product of two smaller natural numbers
   
      isPrime(5) = true (1*5 or 5*1)
      isPrime(4) = false (1*4 or 2*2 or 4*1)
@@ -299,7 +307,10 @@ const isPrime = (n) => {
   return true;
 };
 ```
-   - Big O - O(n)
+
+#### Time Complexity
+
+Big O - O(n)
 
 ---
 
@@ -332,7 +343,9 @@ const isOptimizedPrime = (n) => {
   return true;
 };
 ```
-   - Big O - O(sqrt(n))       
+#### Time Complexity
+
+Big O - O(sqrt(n))       
 
 ---
 
@@ -374,7 +387,10 @@ const isPowerOfTwo = (n) => {
   return true;
 };
 ```
-   - Big O - O(logn)
+
+#### Time Complexity
+
+Big O - O(logn)
 
 ---
 
@@ -403,6 +419,82 @@ const isPowerOfTwoBitwise = (n) => {
   return (n & (n - 1)) === 0;
 };
 ```
-   - Big O - O(1)
 
+#### Time Complexity
+
+Big O - O(1)
+
+---
+
+### Recursion
+
+#### What?
+
+ - Recursion is a problem solving technique where the solution depends on solutions to smaller instances of the same problem
+ - Recursiom is when a function calls itself
+
+#### Why?
+
+ - A great technique to simplify your solution
+ - If you find yourself breaking down your problem into smaller versions of the same problem, recursion is very useful
+
+#### Analogy
+
+<br /> 
+
+<img width="624" alt="Screenshot 2023-05-19 at 8 55 01 PM" src="https://github.com/jaggehns/DSA/assets/72048640/9cb9fc13-ba3c-454f-aa2a-9a4938e4994a">
+
+<br /> <br />
+
+#### A few points about recursion
+
+- Every recursive solution needs to have a base case - a condition to terminate the recursion
+- Recursion might simplify solving a problem but it does not always translate to a faster solution
+- Recursion is a topic that is not the most straight forward to understand. Do not give up if you struggle with the concept!
+
+---
+
+#### [Recursive Fibonacci Sequence](algorithms/recursion/recursive-fibonacci-sequence/recursive-fibonacci-sequence.js)
+  
+  **Problem** - Given a number 'n', find the first 'n' elements of the Fibonacci Sequence
+  
+   In mathematics, the Fibonacci sequence is a sequence in which each number is the sum of the two preceeding ones
+  
+     The first two numbers in the sequence are 0 and 1. (0,1,1,2,3,5,8...)
+  
+     recursiveFibonacci(0) = 0
+     recursiveFibonacci(1) = 1
+     recursiveFibonacci(6) = 8
+     
+   #### Tips for recursive solutions
+   
+   - Figure out how to break down the problem into smaller versions of the same problem
+   - Identify the base case for recursion
+
+   - The Fibonacci sequence is a sequence in which each number is the sum of the two preceeding ones
+   - If F represents a function to calculate the Fibonacci number, then:
+
+    Fₙ = Fₙ₋₁ + Fₙ₋₂
+    F₀ = and F₁ = 1
+    
+    F₂ = F₁ + F₀
+    F₂ = 1 + 0
+    F₂ = 1
+     
+  ```js
+  const recursiveFibonacci = (n) => {
+    if (n < 2) {
+      return n;
+    }
+
+    return recursiveFibonacci(n - 1) + recursiveFibonacci(n - 2);
+  };
+  ```
+  
+  #### Time Complexity
+  
+  Big O - O(2^n)
+  
+  <img width="624" alt="Screenshot 2023-05-20 at 11 30 10 PM" src="https://github.com/jaggehns/DSA/assets/72048640/e4bad921-3355-41b5-9a04-1d4d0092a55c">
+                           
 ---
