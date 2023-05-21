@@ -430,7 +430,7 @@ Big O - O(1)
 #### What?
 
  - Recursion is a problem solving technique where the solution depends on solutions to smaller instances of the same problem
- - Recursiom is when a function calls itself
+ - Recursion is when a function calls itself
 
 #### Why?
 
