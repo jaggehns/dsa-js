@@ -35,6 +35,7 @@
       - [Bitwise Power of Two](#bitwise-power-of-two)
   - [Recursion](#recursion)
     - [Recursive Fibonacci Sequence](#recursive-fibonacci-sequence)
+    - [Recursive Factorial of a Number](#recursive-factorial-of-a-number) 
     
 ---
 
@@ -254,8 +255,6 @@
   **Problem** - Given an integer 'n', find the factorial of that integer
   
    In mathematics, the factorial of a non-negative integer 'n', denoted n!, is the product of all positive integers less than or equal to 'n'
-   
-   The first two numbers in the sequence are 0 and 1
   
      Factorial of zero is 1
      factorial(4) = 4*3*2*1 = 24
@@ -497,4 +496,46 @@ Big O - O(1)
   
   <img width="624" alt="Screenshot 2023-05-20 at 11 30 10 PM" src="https://github.com/jaggehns/DSA/assets/72048640/e4bad921-3355-41b5-9a04-1d4d0092a55c">
                            
+---
+
+ #### [Recursive Factorial of a Number](algorithms/recursions/recursive-factorial-of-a-number/recursive-factorial-of-a-number.js)
+  
+  **Problem** - Given an integer 'n', find the factorial of that integer
+  
+   In mathematics, the factorial of a non-negative integer 'n', denoted n!, is the product of all positive integers less than or equal to 'n'
+  
+     Factorial of zero is 1
+     factorial(4) = 4*3*2*1 = 24
+     factorial(5) = 5*4*3*2*1 = 120
+     
+   #### Tips for recursive solutions
+   
+   - Figure out how to break down the problem into smaller versions of the same problem
+   - Identify the base case for recursion
+
+   - Factorial of a non-negative integer 'n' is the product of all positive integers less than or equal to 'n'.
+
+    5! = 5*4*3*2*1
+    4! = 4*3*2*1
+    3! = 3*2*1
+    2! = 2*1
+    1! = 1*1
+    0! = 1
+    
+    n! = n * (n-1)!
+  
+```js
+const recursiveFactorial = (n) => {
+  if (n === 0) {
+    return 1;
+  }
+
+  return n * recursiveFactorial(n - 1);
+};
+```
+
+#### Time Complexity
+
+Big O - O(n)       
+
 ---
