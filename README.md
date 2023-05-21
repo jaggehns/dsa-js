@@ -498,7 +498,7 @@ Big O - O(1)
                            
 ---
 
- #### [Recursive Factorial of a Number](algorithms/recursions/recursive-factorial-of-a-number/recursive-factorial-of-a-number.js)
+ #### [Recursive Factorial of a Number](algorithms/recursion/recursive-factorial-of-a-number/recursive-factorial-of-a-number.js)
   
   **Problem** - Given an integer 'n', find the factorial of that integer
   
