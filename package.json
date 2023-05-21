@@ -8,7 +8,8 @@
     "test-factorial": "node ./algorithms/math-algorithms/factorial-of-a-number/factorial-of-a-number.js",
     "test-prime": "node ./algorithms/math-algorithms/prime-number/prime-number.js",
     "test-power-of-two": "node ./algorithms/math-algorithms/power-of-two/power-of-two.js",
-    "test-recursive-fibonacci": "node ./algorithms/recursion/recursive-fibonacci-sequence/recursive-fibonacci-sequence.js" 
+    "test-recursive-fibonacci": "node ./algorithms/recursion/recursive-fibonacci-sequence/recursive-fibonacci-sequence.js",
+    "test-recursive-factorial": "node ./algorithms/recursion/recursive-factorial-of-a-number/recursive-factorial-of-a-number.js" 
   },
   "repository": {
     "type": "git",
