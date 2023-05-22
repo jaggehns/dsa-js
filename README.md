@@ -474,7 +474,7 @@ Big O - O(1)
    - If F represents a function to calculate the Fibonacci number, then:
 
     Fₙ = Fₙ₋₁ + Fₙ₋₂
-    F₀ = and F₁ = 1
+    F₀ = 0 and F₁ = 1
     
     F₂ = F₁ + F₀
     F₂ = 1 + 0
