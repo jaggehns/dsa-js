@@ -543,7 +543,7 @@ Big O - O(n)
 
 ### [Search Algorithms](#search-algorithms)
 
-#### [Linear Search](#linear-search)
+#### [Linear Search](algorithms/search-algorithms/linear-search/linear-search.js)
 
  **Problem** - Given an array of 'n' elements and a target element 't', find the index of 't' in the array. Return -1 if the target element is not found.
   
@@ -557,8 +557,6 @@ Big O - O(n)
   - At each element though, check if the element is equal to the target element
   - If element is found, return the index of the element
   - If element is not found, return -1
-
-  #### [Linear Search Solution] (algorithms/search-algorithms/linear-search/linear-search.js)
   
 ```js
 const linearSearch = (arr, target) => {
