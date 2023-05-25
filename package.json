@@ -10,7 +10,8 @@
     "test-power-of-two": "node ./algorithms/math-algorithms/power-of-two/power-of-two.js",
     "test-recursive-fibonacci": "node ./algorithms/recursion/recursive-fibonacci-sequence/recursive-fibonacci-sequence.js",
     "test-recursive-factorial": "node ./algorithms/recursion/recursive-factorial-of-a-number/recursive-factorial-of-a-number.js",
-    "test-linear-search": "node ./algorithms/search-algorithms/linear-search/linear-search.js" 
+    "test-linear-search": "node ./algorithms/search-algorithms/linear-search/linear-search.js",
+    "test-binary-search": "node ./algorithms/search-algorithms/binary-search/binary-search.js" 
   },
   "repository": {
     "type": "git",
